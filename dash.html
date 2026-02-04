@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Admin Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f7fb;
+        }
+
+        .sidebar {
+            height: 100vh;
+            background-color: #0b1c2d;
+        }
+
+        .sidebar a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            padding: 12px 20px;
+        }
+
+        /* .sidebar a:hover {
+            background-color: #59a1f8;
+        } */
+
+        .card {
+            border-radius: 10px;
+            border: none;
+        }
+
+        .revenue{
+            background-color: #59a1f8;
+        }
+
+        .bookings{
+            background-color: #9cc40d;
+        }
+        .passengers{
+            background-color: #e08d0f;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Sidebar -->
+        <aside class="col-md-2 sidebar p-0">
+            <h4 class="text-center text-white py-3">Airline Admin</h4>
+            <a href="#">Dashboard</a>
+            <a href="#">Flights</a>
+            <a href="#">Bookings</a>
+            <a href="#">Passengers</a>
+            <a href="#">Crew</a>
+            <a href="#">Reports</a>
+            <a href="#">Settings</a>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="col-md-10 p-4">
+            <h2 class="mb-4">Dashboard Overview</h2>
+
+
+            <div class="row g-4">
+
+                 <div class="col-md-3">
+                    <div class="card bg-primary text-white">
+                        <div class="card-body">
+                            <h6>Total Flights</h6>
+                            <h3>128</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card bookings text-white">
+                        <div class="card-body">
+                            <h6>Bookings Today</h6>
+                            <h3>542</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card passengers">
+                        <div class="card-body">
+                            <h6>Active Passengers</h6>
+                            <h3>3,420</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card revenue">
+                        <div class="card-body">
+                            <h6>Daily Revenue</h6>
+                            <h3>₹12.8L</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lower Grid -->
+            <div class="row mt-4">
+                <div class="col-md-8">
+                    <div class="card bg-info p-3">
+                        <h5>Upcoming Flights</h5>
+                        <p class="text-muted mb-0">
+                            List of flights departing in the next 24 hours.
+                        </p>
+                    </div>
+
+                    <!-- On tables -->
+<table class="table table-success table-striped">
+<tr>
+  <th>Flight No.</th>
+  <th>Source</th>
+  <th>Destination</th>
+  <th>Time</th>
+  <th>Seats</th>
+</tr>
+<tr>
+  <td>F101</td>
+  <td>Pune</td>
+  <td>Mumbai</td>
+  <td>20:00PM</td>
+  <td>500</td>
+</tr>
+<tr>
+  <td>F101</td>
+  <td>Pune</td>
+  <td>Mumbai</td>
+  <td>20:00PM</td>
+  <td>500</td>
+</tr>
+<tr>
+  <td>F101</td>
+  <td>Pune</td>
+  <td>Mumbai</td>
+  <td>20:00PM</td>
+  <td>500</td>
+</tr>
+<tr>
+  <td>F101</td>
+  <td>Pune</td>
+  <td>Mumbai</td>
+  <td>20:00PM</td>
+  <td>500</td>
+</tr>
+
+</table>
+<!-- <table class="table-secondary">...</table>
+<table class="table-success">...</table>
+<table class="table-danger">...</table>
+<table class="table-warning">...</table>
+<table class="table-info">...</table>
+<table class="table-light">...</table>
+<table class="table-dark">...</table> -->
+
+
+</tr>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card bg-danger p-3">
+                        <h5>System Alerts</h5>
+                        <p class="text-muted mb-0">
+                            Delays, maintenance warnings, crew updates.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
